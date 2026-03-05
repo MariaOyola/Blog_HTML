@@ -8,13 +8,14 @@
 /* Transición suave en todo */
 * {
     transition: all 5s ease;
+
 }
 
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #e8d5f7, #f3e5f5);
-    color: #333;
+    color: #000000;
 }
 
 /* HERO */
