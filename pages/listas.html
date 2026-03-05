@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Listas</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header class="hero"><h1>Listas</h1></header>
+<nav><ul><li><a href="../index.html">Inicio</a></li></ul></nav>
+
+<main class="card">
+
+<h2>Lista Desordenada</h2>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul>
+
+<h2>Lista Ordenada</h2>
+<ol>
+<li>Paso 1</li>
+<li>Paso 2</li>
+</ol>
+
+<h2>Lista de Definición</h2>
+<dl>
+<dt>HTML</dt>
+<dd>Lenguaje de estructura</dd>
+</dl>
+
+</main>
+
+<footer>
+<p>© 2026 Blog HTML</p>
+</footer>
+
+<script>
+const savedColor = localStorage.getItem("mainColor");
+
+if (savedColor) {
+    document.documentElement.style.setProperty('--main-color', savedColor);
+}
+</script>
+
+</body>
+</html>

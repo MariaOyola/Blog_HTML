@@ -1,0 +1,150 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Educativo HTML</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="hero">
+    <h1>Blog Educativo HTM</HTML></h1>
+    <p>Blog educativo sobre etiquetas HTML organizadas por categorías</p>
+
+    <!-- Selector de color -->
+    <div class="color-picker">
+    <label>Elige tu color 🎨</label>
+    <input type="color" id="colorSelector">
+</div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="pages/estructurales.html">Estructurales</a></li>
+        <li><a href="pages/texto.html">Texto</a></li>
+        <li><a href="pages/listas.html">Listas</a></li>
+        <li><a href="pages/formularios.html">Formularios</a></li>
+        <li><a href="pages/tablas.html">Tablas</a></li>
+        <li><a href="pages/multimedia.html">Multimedia</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="card">
+        <h2>Bienvenida</h2>
+        <p>
+            En este blog aprenderás más de 20 etiquetas HTML con ejemplos prácticos,
+            explicación y buenas prácticas organizadas por categorías.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Categorías</h2>
+        <p>Selecciona una categoría para comenzar:</p>
+    </section>
+    
+       <section class="card">
+        <h2>Elaborado por</h2>
+        <p>Daniel Salazar</p>
+             <p> Maria Rodriguez</p>
+            </a>
+    
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 - Blog Educativo HTML</p>
+</footer>
+
+<!-- SCRIPT PARA GUARDAR COLOR -->
+<script>
+const colorInput = document.getElementById("colorSelector");
+
+// Cargar color guardado
+const savedColor = localStorage.getItem("mainColor");
+if (savedColor) {
+    document.documentElement.style.setProperty('--main-color', savedColor);
+    if(colorInput) colorInput.value = savedColor;
+}
+
+// Cambiar color
+if (colorInput) {
+    colorInput.addEventListener("input", function() {
+        document.documentElement.style.setProperty('--main-color', this.value);
+        localStorage.setItem("mainColor", this.value);
+    });
+}
+</script>
+</script>
+
+</body>
+=======
+<!DOCTYPE html> // DOCTYPE : Es una declaracion obligatoria de inicio de documentacion que indica la version que se usa.
+<html lang="es"> // html : indica 
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Educativo HTML</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+    <h1>Blog Educativo de Etiquetas HTML</h1>
+</header>
+
+<nav>
+    <a href="#estructurales">Estructurales</a>
+    <a href="#texto">Texto</a>
+    <a href="#formularios">Formularios</a>
+</nav>
+
+<main>
+
+    <section id="formularios">
+        
+        <form action="#" method="post">
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad">
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje"></textarea>
+
+    <label for="categoria">Categoría favorita:</label>
+    <select id="categoria" name="categoria">
+        <option value="estructurales">Estructurales</option>
+        <option value="texto">Texto</option>
+        <option value="formularios">Formularios</option>
+    </select>
+
+    <button type="submit">Enviar</button>
+
+</form>
+        <h2>Etiquetas de Formularios</h2>
+
+        <article>
+            <h3>Etiqueta &lt;form&gt;</h3>
+            <p>Define un formulario para recopilar datos del usuario.</p>
+        </article>
+
+        <!-- AQUÍ VA EL FORMULARIO -->
+        
+    </section>
+
+</main>
+
+<footer>
+    <p>Proyecto SENA - 2026</p>
+</footer>
+
+</body>
+>>>>>>> 435f9f2650136e9fc2e42e799c30a6d390d4c779
+</html>

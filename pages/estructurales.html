@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Estructurales</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header class="hero">
+<h1>Etiquetas Estructurales</h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="../index.html">Inicio</a></li>
+</ul>
+</nav>
+
+<main>
+
+<section class="card">
+<h2>&lt;header&gt;</h2>
+<p><strong>Definición:</strong> Representa la cabecera de una página o de una sección.
+Normalmente contiene el título, logo o menú principal.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre>
+<header>  
+  <h1>Mi Página Web</h1>
+</header>
+</pre>
+<p><strong>Uso:</strong>Título principal, logos, Información introductoria.</p>
+</section>
+
+<section class="card">
+<h2>&lt;nav&gt;</h2>
+<p>Representa una sección de navegación con enlaces.</p>
+</section>
+
+<section class="card">
+<h2>&lt;main&gt;</h2>
+<p>Contenido principal del documento.</p>
+</section>
+
+<section class="card">
+<h2>&lt;section&gt;</h2>
+<p>Divide el contenido en secciones.</p>
+</section>
+
+<section class="card">
+<h2>&lt;article&gt;</h2>
+<p>Contenido independiente.</p>
+</section>
+
+<section class="card">
+<h2>&lt;aside&gt;</h2>
+<p>Contenido secundario.</p>
+</section>
+
+<section class="card">
+<h2>&lt;footer&gt;</h2>
+<p>Pie de página.</p>
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 Blog HTML</p>
+</footer>
+
+<script>
+const savedColor = localStorage.getItem("mainColor");
+
+if (savedColor) {
+    document.documentElement.style.setProperty('--main-color', savedColor);
+}
+</script>
+
+</body>
+</html>

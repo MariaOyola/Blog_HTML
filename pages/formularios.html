@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Formularios</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header class="hero"><h1>Formulario</h1></header>
+<nav><ul><li><a href="../index.html">Inicio</a></li></ul></nav>
+
+<main class="card">
+
+<form>
+<fieldset>
+<legend>Registro</legend>
+
+<label>Nombre:</label>
+<input type="text"><br><br>
+
+<label>Email:</label>
+<input type="email"><br><br>
+
+<label>Password:</label>
+<input type="password"><br><br>
+
+<label>Edad:</label>
+<input type="number"><br><br>
+
+<label>Fecha:</label>
+<input type="date"><br><br>
+
+<label>Género:</label>
+<input type="radio" name="g"> F
+<input type="radio" name="g"> M<br><br>
+
+<label>Intereses:</label>
+<input type="checkbox"> HTML
+<input type="checkbox"> CSS<br><br>
+
+<label>Archivo:</label>
+<input type="file"><br><br>
+
+<button type="submit">Enviar</button>
+
+</fieldset>
+</form>
+
+</main>
+
+<footer>
+<p>© 2026 Blog HTML</p>
+</footer>
+
+<script>
+const savedColor = localStorage.getItem("mainColor");
+
+if (savedColor) {
+    document.documentElement.style.setProperty('--main-color', savedColor);
+}
+</script>
+
+</body>
+</html>

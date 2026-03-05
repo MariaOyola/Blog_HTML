@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Texto</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header class="hero"><h1>Etiquetas de Texto</h1></header>
+<nav><ul><li><a href="../index.html">Inicio</a></li></ul></nav>
+
+<main class="card">
+
+<h1>Título h1</h1>
+<h2>Título h2</h2>
+<h3>Título h3</h3>
+
+<p>Este es un <strong>texto importante</strong> y este es <em>texto enfatizado</em>.</p>
+
+<p>Esto es un <span style="color:purple;">span con estilo</span></p>
+
+<p>Salto de línea<br>Ejemplo con br</p>
+
+<hr>
+
+</main>
+
+<footer>
+<p>© 2026 Blog HTML</p>
+</footer>
+
+<script>
+const savedColor = localStorage.getItem("mainColor");
+
+if (savedColor) {
+    document.documentElement.style.setProperty('--main-color', savedColor);
+}
+</script>
+
+</body>
+</html>

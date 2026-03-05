@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Multimedia</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header class="hero"><h1>Multimedia</h1></header>
+<nav><ul><li><a href="../index.html">Inicio</a></li></ul></nav>
+
+<main class="card">
+
+<h2>Imagen</h2>
+<img src="../img/ejemplo.png" width="200">
+
+<h2>Audio</h2>
+<audio controls>
+<source src="../media/audio.mp3" type="audio/mpeg">
+</audio>
+
+<h2>Video</h2>
+<video width="300" controls>
+<source src="../media/video.mp4" type="video/mp4">
+</video>
+
+</main>
+
+<footer>
+<p>© 2026 Blog HTML</p>
+</footer>
+
+<script>
+
+const savedColor = localStorage.getItem("mainColor");
+
+if (savedColor) {
+    document.documentElement.style.setProperty('--main-color', savedColor);
+}
+</script>
+
+</body>
+</html>

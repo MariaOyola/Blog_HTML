@@ -1,0 +1,144 @@
+/* FUENTE BONITA */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --main-color: #8e44ad;
+}
+
+/* Transición suave en todo */
+* {
+    transition: all 5s ease;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e8d5f7, #f3e5f5);
+    color: #333;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, var(--main-color), #c39bd3);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Selector de color */
+.color-picker {
+    margin-top: 20px;
+}
+
+/* NAV */
+nav {
+    background: var(--main-color);
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #f9e79f;
+    transform: scale(1.1);
+}
+
+/* MAIN */
+main {
+    padding: 40px 10%;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* TITULOS */
+h2 {
+    color: var(--main-color);
+}
+
+/* CODE */
+pre {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+/* TABLAS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background: var(--main-color);
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* FORMULARIO */
+input, textarea, select, button {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+button {
+    background: var(--main-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--main-color);
+    color: white;
+    margin-top: 40px;
+}

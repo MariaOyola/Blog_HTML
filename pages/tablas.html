@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tablas</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header class="hero"><h1>Tablas</h1></header>
+<nav><ul><li><a href="../index.html">Inicio</a></li></ul></nav>
+
+<main class="card">
+
+<table>
+<thead>
+<tr>
+<th>Nombre</th>
+<th>Edad</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>María</td>
+<td>20</td>
+</tr>
+</tbody>
+</table>
+
+</main>
+
+<footer>
+<p>© 2026 Blog HTML</p>
+</footer>
+
+<script>
+const savedColor = localStorage.getItem("mainColor");
+
+if (savedColor) {
+    document.documentElement.style.setProperty('--main-color', savedColor);
+}
+</script>
+
+</body>
+</html>
