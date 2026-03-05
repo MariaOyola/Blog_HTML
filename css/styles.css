@@ -10,7 +10,11 @@
     transition: all 5s ease;
 
 }
-
+.card img {
+    width: 300px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -79,7 +83,16 @@ main {
     padding: 30px;
     margin-bottom: 30px;
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.579);
+}
+
+.card_1 {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.579);
 }
 
 .card:hover {
@@ -89,11 +102,18 @@ main {
 /* TITULOS */
 h2 {
     color: var(--main-color);
+
+}
+
+h1  {
+
+    text-align: center;
+
 }
 
 /* CODE */
 pre {
-    background: #f4f4f4;
+    background: #c7c2c8;
     padding: 15px;
     border-radius: 10px;
     overflow-x: auto;
@@ -120,7 +140,7 @@ th, td {
 input, textarea, select, button {
     padding: 8px;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #5f5c5c;
     margin-top: 5px;
 }
 
@@ -140,6 +160,6 @@ footer {
     text-align: center;
     padding: 20px;
     background: var(--main-color);
-    color: white;
+    color: rgb(0, 0, 0);
     margin-top: 40px;
 }

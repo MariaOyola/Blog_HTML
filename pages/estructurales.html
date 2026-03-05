@@ -27,7 +27,7 @@
       <p><strong>Definición:</strong> Representa la cabecera de una página o de una sección.
         Normalmente contiene el título, logo o menú principal.</p>
       <p><strong>Sintaxis:</strong></p>
-      <h3>&lt;Ejemplo&gt;</h3>
+      <h2>&lt;Ejemplo&gt;</h2>
       <img src="../img/header.png" width="">
       <pre>
 &lt;header&gt;
@@ -42,7 +42,7 @@
       <h2>&lt;nav&gt;</h2>
       <p><strong>Definición:</strong> Se utiliza para agrupar enlaces de navegación dentro de una página web.</p>
       <p><strong>Sintaxis:</strong></p>
-      <h3>&lt;Ejemplo&gt;</h3>
+      <h2>&lt;Ejemplo&gt;</h2>
       <img src="../img/mav.png" width="">
       <pre>
 &lt;nav&gt;
@@ -60,7 +60,7 @@
       <p><strong>Definición:</strong> Representa el contenido principal del documento.
         Solo debe existir un elemento &lt;main&gt; por página.</p>
       <p><strong>Sintaxis:</strong></p>
-      <h3>&lt;Ejemplo&gt;</h3>
+      <h2>&lt;Ejemplo&gt;</h2>
       <img src="../img/main.png" width="">
       <pre>
 &lt;main&gt;
@@ -76,8 +76,8 @@
       <h2>&lt;section&gt;</h2>
       <p><strong>Definición:</strong> Divide el contenido en secciones relacionadas entre sí.</p>
       <p><strong>Sintaxis:</strong></p>
-      <h3>&lt;Ejemplo&gt;</h3>
-      <img src="../img/section.png" width="200">
+      <h2>&lt;Ejemplo&gt;</h2>
+      <img src="../img/section.png" width="">
       <pre>
 &lt;section&gt;
   &lt;h2&gt;Sección 1&lt;/h2&gt;
@@ -92,7 +92,7 @@
       <h2>&lt;article&gt;</h2>
       <p><strong>Definición:</strong> Representa contenido independiente y reutilizable.</p>
       <p><strong>Sintaxis:</strong></p>
-      <h3>&lt;Ejemplo&gt;</h3>
+      <h2>&lt;Ejemplo&gt;</h2>
       <img src="../img/article.png" width="200">
       <pre>
 &lt;article&gt;
@@ -106,9 +106,13 @@
     <!-- ASIDE -->
     <section class="card">
       <h2>&lt;aside&gt;</h2>
+<aside>
+    <h3>Dato extra</h3>
+    <p>HTML significa HyperText Markup Language.</p>
+</aside>
       <p><strong>Definición:</strong> Contiene información secundaria o complementaria.</p>
       <p><strong>Sintaxis:</strong></p>
-      <h3>&lt;Ejemplo&gt;</h3>
+      <h2>&lt;Ejemplo&gt;</h2>
       <img src="../img/aside.png" width="200">
       <pre>
 &lt;aside&gt;
@@ -123,7 +127,7 @@
       <h2>&lt;footer&gt;</h2>
       <p><strong>Definición:</strong> Representa el pie de página de un documento o sección.</p>
       <p><strong>Sintaxis:</strong></p>
-      <h3>&lt;Ejemplo&gt;</h3>
+      <h2>&lt;Ejemplo&gt;</h2>
       <img src="../img/footer.png" width="200">
       <pre>
 &lt;footer&gt;
@@ -138,6 +142,14 @@
   <footer>
     <p>© 2026 Blog HTML - Daniel</p>
   </footer>
+
+  <script>
+const savedColor = localStorage.getItem("mainColor");
+
+if (savedColor) {
+    document.documentElement.style.setProperty('--main-color', savedColor);
+}
+</script>
 
 </body>
 
