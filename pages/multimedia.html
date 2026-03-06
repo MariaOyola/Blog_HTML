@@ -10,20 +10,94 @@
 <header class="hero"><h1>Multimedia</h1></header>
 <nav><ul><li><a href="../index.html">Inicio</a></li></ul></nav>
 
-<main class="card">
+<main>
+ 
+  <!-- Imagen ( img) -->
+    <h1>Imagen</h1>
+ <div class="card_1">
+    
+   <p><strong>Definición:</strong>La etiqueta "Imagen" se utiliza para insertar imágenes en una página web.</p>
+   <p><strong>Sintaxis:</strong>
+    <pre>
+        &lt;img src="ruta-imagen" alt="descripcion"&gt;
+    </pre>
+   <p><strong>Ejemplo</strong></p>
+   
+    <img src="../img/ejemplo.png" width="200">
+   <p><Strong>Uso:</Strong>Fotografías, Logos, Íconos </p>
 
-<h2>Imagen</h2>
-<img src="../img/ejemplo.png" width="200">
+ </div>
 
-<h2>Audio</h2>
+
+  <!--Audio (audio)-->
+<h1>Audio</h1>
+<div class="card_1">
+  <p><strong>Definición:</strong>La etiqueta "audio" permite reproducir archivos de audio en una página web.</p>
+   <p><strong>Sintaxis:</strong><p>
+    <pre>
+        &lt;audio controls&gt;
+          &lt;source src="ruta-audio" type="audio/mpeg"&gt;
+        &lt;/audio&gt;
+         </pre>
+        <p><strong>Ejemplo</strong></p>
 <audio controls>
 <source src="../media/audio.mp3" type="audio/mpeg">
 </audio>
+<p><strong>Uso:</strong> Música, comentarios de audio o cualquier otro contenido de audio.</p>
+</div>
 
-<h2>Video</h2>
+<!--Video (Video)-->
+
+<h1>Video</h1>
+<div class="card_1">
+    <p><Strong>Definición</Strong>La etiqueta "Video" se usa para insertar videos en una página web.</p>
+    <p><strong>Sintaxis:</strong></p>
+    <pre>
+        &lt;video controls&gt;
+         &lt;source src ="video.mp4" type="video/mp4"&gt;
+         &it;/Video&gt;
+    </pre>
+    <p><strong>Ejemplo</strong></p>
 <video width="300" controls>
 <source src="../media/video.mp4" type="video/mp4">
 </video>
+<p><strong>Uso:</strong> Videos educativos, Tutoriales.</p>
+</div>
+  
+  
+<!--Source (fuente)-->
+
+    <h1>Source</h1>
+    <div class="card_1">
+        <p><Strong>Definición</Strong></p> La etiqueta "Source" se usa dentro de audio o video para especificar la fuente del archivo multimedia.
+        <p><strong>>Sintaxis:</strong></p>
+        <pre>
+          &lt;source src ="archico" type="tipo"&gt;
+        </pre>
+        <p><Strong>Ejemplo</Strong></p>
+        <img src="../img/source.png" width="200">
+        <p><strong>Uso:</strong>Especificar archivos multimedia, Usarse dentro de audio y video.</p>
+    
+    </div>
+    
+<!--iframe (marco)-->
+
+ <h1>iframe</h1>
+    <div class="card_1">
+        <p><Strong>Definición</Strong></p> La etiqueta "iframe" permite insertar otra página web dentro de una página HTML.
+        <p><strong>>Sintaxis:</strong></p>
+        <pre>
+          &lt;iframe src="url">&lt;/iframe&gt;
+        </pre>
+    <iframe width="560" height="315" 
+src="https://www.youtube.com/embed/EvKm8yhM7V8"
+title="Video HTML"
+frameborder="0"
+allowfullscreen>
+</iframe>
+  <p><strong>Uso:</strong>Videos de YouTube, Mapas de Google Maps, Otras páginas web</p>
+
+    </div>
 
 </main>
 
