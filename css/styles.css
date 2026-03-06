@@ -7,7 +7,7 @@
 
 /* Transición suave en todo */
 * {
-    transition: all 5s ease;
+    transition: all 0.3s ease;
 
 }
 .card img {
@@ -160,6 +160,6 @@ footer {
     text-align: center;
     padding: 20px;
     background: var(--main-color);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin-top: 40px;
 }
