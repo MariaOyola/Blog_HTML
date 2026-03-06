@@ -8,8 +8,18 @@
 <body>
 
 <header class="hero"><h1>Formulario</h1></header>
-<nav><ul><li><a href="../index.html">Inicio</a></li></ul></nav>
 
+<nav>
+    <ul>
+        <li><a href="estructurales.html">Estructurales</a></li>
+        <li><a href="texto.html">Texto</a></li>
+        <li><a href="listas.html">Listas</a></li>
+        <li><a href="formularios.html">Formularios</a></li>
+        <li><a href="tablas.html">Tablas</a></li>
+        <li><a href="multimedia.html">Multimedia</a></li>
+        <li><a href="../index.html">Inicio</a></li>
+    </ul>
+</nav>
 
 <main>
 
@@ -219,6 +229,23 @@ El formato de fecha varía según la configuración del navegador.</p>
 &lt;input type="date" name="fecha" min="2024-01-01" max="2026-12-31"&gt;
 </pre>
 <p><strong>Uso:</strong> Fecha de nacimiento, reservas, eventos, plazos.</p>
+
+<!-- INPUT TYPE: RADIO -->
+<section class="card">
+<h2>&lt;input type="radio"&gt;</h2>
+<p><strong>Definición:</strong> Crea botones de opción donde solo se puede seleccionar 
+una opción de un grupo. Todos deben tener el mismo atributo name.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre>
+&lt;input type="radio" name="genero" value="m" id="masculino"&gt;
+&lt;label for="masculino"&gt;Masculino&lt;/label&gt;
+
+&lt;input type="radio" name="genero" value="f" id="femenino"&gt;
+&lt;label for="femenino"&gt;Femenino&lt;/label&gt;
+</pre>
+<p><strong>Uso:</strong> Selección única entre varias opciones (género, método de pago).</p>
+</section>
+
 </section>
 
 <section class="card">
@@ -259,25 +286,15 @@ El formato de fecha varía según la configuración del navegador.</p>
 
 </section>
 
-<!-- INPUT TYPE: RADIO -->
-<section class="card">
-<h2>&lt;input type="radio"&gt;</h2>
-<p><strong>Definición:</strong> Crea botones de opción donde solo se puede seleccionar 
-una opción de un grupo. Todos deben tener el mismo atributo name.</p>
-<p><strong>Sintaxis:</strong></p>
-<pre>
-&lt;input type="radio" name="genero" value="m" id="masculino"&gt;
-&lt;label for="masculino"&gt;Masculino&lt;/label&gt;
-
-&lt;input type="radio" name="genero" value="f" id="femenino"&gt;
-&lt;label for="femenino"&gt;Femenino&lt;/label&gt;
-</pre>
-<p><strong>Uso:</strong> Selección única entre varias opciones (género, método de pago).</p>
-</section>
-
-<!-- INPUT TYPE: CHECKBOX -->
-<section class="card">
-<h2>&lt;in
+  <button onclick="subirArriba()" id="btnArriba">⬆ Subir</button>
+<script>
+function subirArriba(){
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+</script>
 
 <footer>
 <p>© 2026 Blog HTML</p>

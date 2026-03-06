@@ -8,10 +8,19 @@
 <body>
 
 <header class="hero"><h1>Multimedia</h1></header>
-<nav><ul><li><a href="../index.html">Inicio</a></li></ul></nav>
+<nav>
+    <ul>
+        <li><a href="estructurales.html">Estructurales</a></li>
+        <li><a href="texto.html">Texto</a></li>
+        <li><a href="listas.html">Listas</a></li>
+        <li><a href="formularios.html">Formularios</a></li>
+        <li><a href="tablas.html">Tablas</a></li>
+        <li><a href="multimedia.html">Multimedia</a></li>
+        <li><a href="../index.html">Inicio</a></li>
+    </ul>
+</nav>
 
 <main>
- 
   <!-- Imagen ( img) -->
     <h1>Imagen</h1>
  <div class="card_1">
@@ -100,6 +109,16 @@ allowfullscreen>
     </div>
 
 </main>
+
+  <button onclick="subirArriba()" id="btnArriba">⬆ Subir</button>
+<script>
+function subirArriba(){
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+</script>
 
 <footer>
 <p>© 2026 Blog HTML</p>
