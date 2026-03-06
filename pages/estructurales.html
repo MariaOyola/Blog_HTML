@@ -19,47 +19,113 @@
 
 <main>
 
+<!-- HEADER -->
 <section class="card">
 <h2>&lt;header&gt;</h2>
 <p><strong>Definición:</strong> Representa la cabecera de una página o de una sección.
 Normalmente contiene el título, logo o menú principal.</p>
 <p><strong>Sintaxis:</strong></p>
 <pre>
-<header>  
-  <h1>Mi Página Web</h1>
-</header>
+&lt;header&gt;  
+  &lt;h1&gt;Mi Página Web&lt;/h1&gt;
+&lt;/header&gt;
 </pre>
-<p><strong>Uso:</strong>Título principal, logos, Información introductoria.</p>
+<p><strong>Uso:</strong> Título principal, logos, información introductoria.</p>
 </section>
 
+<!-- NAV -->
 <section class="card">
 <h2>&lt;nav&gt;</h2>
-<p>Representa una sección de navegación con enlaces.</p>
+<p><strong>Definición:</strong> Representa una sección de navegación que contiene enlaces 
+a otras páginas o secciones dentro del documento.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre>
+&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="index.html"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="productos.html"&gt;Productos&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</pre>
+<p><strong>Uso:</strong> Menú de navegación principal, barras laterales, breadcrumbs.</p>
 </section>
 
+<!-- MAIN -->
 <section class="card">
 <h2>&lt;main&gt;</h2>
-<p>Contenido principal del documento.</p>
+<p><strong>Definición:</strong> Representa el contenido principal del documento. 
+Solo debe haber un elemento &lt;main&gt; por página.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre>
+&lt;main&gt;
+  &lt;h1&gt;Contenido Principal&lt;/h1&gt;
+  &lt;p&gt;Este es el contenido principal...&lt;/p&gt;
+&lt;/main&gt;
+</pre>
+<p><strong>Uso:</strong> Contenido central de la página, artículos, formularios principales.</p>
+<img src="" alt="">
 </section>
 
+<!-- SECTION -->
 <section class="card">
 <h2>&lt;section&gt;</h2>
-<p>Divide el contenido en secciones.</p>
+<p><strong>Definición:</strong> Divide el contenido en secciones temáticas. 
+Cada sección debe tener un encabezado que describa su contenido.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre>
+&lt;section&gt;
+  &lt;h2&gt;Nuestros Servicios&lt;/h2&gt;
+  &lt;p&gt;Descripción de servicios...&lt;/p&gt;
+&lt;/section&gt;
+</pre>
+<p><strong>Uso:</strong> Agrupar contenido relacionado, capítulos, secciones de servicios.</p>
 </section>
 
+<!-- ARTICLE -->
 <section class="card">
 <h2>&lt;article&gt;</h2>
-<p>Contenido independiente.</p>
+<p><strong>Definición:</strong> Representa contenido independiente y autocontenido 
+que puede distribuirse o reutilizarse por separado.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre>
+&lt;article&gt;
+  &lt;h2&gt;Título del Artículo&lt;/h2&gt;
+  &lt;p&gt;Contenido del artículo...&lt;/p&gt;
+&lt;/article&gt;
+</pre>
+<p><strong>Uso:</strong> Entradas de blog, noticias, comentarios, publicaciones de foros.</p>
 </section>
 
+<!-- ASIDE -->
 <section class="card">
 <h2>&lt;aside&gt;</h2>
-<p>Contenido secundario.</p>
+<p><strong>Definición:</strong> Representa contenido relacionado indirectamente con el contenido principal. 
+Es información complementaria o secundaria.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre>
+&lt;aside&gt;
+  &lt;h3&gt;Artículos Relacionados&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Artículo 1&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/aside&gt;
+</pre>
+<p><strong>Uso:</strong> Barras laterales, publicidad, enlaces relacionados, información adicional.</p>
 </section>
 
+<!-- FOOTER -->
 <section class="card">
 <h2>&lt;footer&gt;</h2>
-<p>Pie de página.</p>
+<p><strong>Definición:</strong> Representa el pie de página de un documento o sección. 
+Contiene información sobre el autor, copyright o enlaces relacionados.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre>
+&lt;footer&gt;
+  &lt;p&gt;&copy; 2026 Mi Empresa&lt;/p&gt;
+  &lt;p&gt;Contacto: info@ejemplo.com&lt;/p&gt;
+&lt;/footer&gt;
+</pre>
+<p><strong>Uso:</strong> Información de copyright, datos de contacto, enlaces a redes sociales.</p>
 </section>
 
 </main>
