@@ -10,44 +10,236 @@
 <header class="hero"><h1>Formulario</h1></header>
 <nav><ul><li><a href="../index.html">Inicio</a></li></ul></nav>
 
-<main class="card">
 
-<form>
-<fieldset>
-<legend>Registro</legend>
+<main>
 
-<label>Nombre:</label>
-<input type="text"><br><br>
+<!-- FORM -->
+<section class="card">
+<h2>&lt;form&gt;</h2>
+<p><strong>Definición:</strong> Crea un formulario interactivo que permite a los usuarios 
+enviar datos al servidor. Contiene controles de entrada como campos de texto, botones, etc.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre>
+&lt;form action="/enviar" method="POST"&gt;
+  &lt;input type="text" name="nombre"&gt;
+  &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;
+</pre>
+<p><strong>Uso:</strong> Formularios de contacto, registro, login, búsqueda, encuestas.</p>
+</section>
 
-<label>Email:</label>
-<input type="email"><br><br>
+<!-- LABEL -->
+<section class="card">
+<h2>&lt;label&gt;</h2>
+<p><strong>Definición:</strong> Define una etiqueta descriptiva para un control de formulario. 
+Mejora la accesibilidad y permite hacer clic en la etiqueta para activar el control.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre>
+&lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+&lt;input type="text" id="nombre" name="nombre"&gt;
 
-<label>Password:</label>
-<input type="password"><br><br>
+&lt;label&gt;
+  Email:
+  &lt;input type="email" name="email"&gt;
+&lt;/label&gt;
+</pre>
+<p><strong>Uso:</strong> Etiquetar campos de formulario, mejorar accesibilidad, UX.</p>
+</section>
 
-<label>Edad:</label>
-<input type="number"><br><br>
+<!-- INPUT -->
+<section class="card">
+<h2>&lt;input&gt;</h2>
+<p><strong>Definición:</strong> Crea un campo de entrada interactivo. Es versátil y puede 
+tener diferentes tipos (text, email, password, etc.). Es una etiqueta vacía.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre>
+&lt;input type="text" name="usuario" placeholder="Tu nombre"&gt;
+&lt;input type="email" name="correo" required&gt;
+&lt;input type="password" name="clave"&gt;
+&lt;input type="number" name="edad" min="18" max="100"&gt;
+</pre>
+<p><strong>Uso:</strong> Campos de texto, contraseñas, emails, números, fechas, archivos.</p>
+</section>
 
-<label>Fecha:</label>
-<input type="date"><br><br>
+<!-- TEXTAREA -->
+<section class="card">
+<h2>&lt;textarea&gt;</h2>
+<p><strong>Definición:</strong> Crea un área de texto multilínea donde los usuarios 
+pueden escribir texto largo. A diferencia de &lt;input&gt;, permite múltiples líneas.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre>
+&lt;textarea name="mensaje" rows="5" cols="30"&gt;
+Texto predeterminado...
+&lt;/textarea&gt;
 
-<label>Género:</label>
-<input type="radio" name="g"> F
-<input type="radio" name="g"> M<br><br>
+&lt;textarea name="comentario" placeholder="Escribe tu comentario"&gt;&lt;/textarea&gt;
+</pre>
+<p><strong>Uso:</strong> Comentarios, mensajes, descripciones largas, reseñas.</p>
+</section>
 
-<label>Intereses:</label>
-<input type="checkbox"> HTML
-<input type="checkbox"> CSS<br><br>
+<!-- SELECT -->
+<section class="card">
+<h2>&lt;select&gt;</h2>
+<p><strong>Definición:</strong> Crea una lista desplegable de opciones. 
+El usuario puede seleccionar una o varias opciones del menú.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre>
+&lt;select name="pais"&gt;
+  &lt;option value=""&gt;Selecciona un país&lt;/option&gt;
+  &lt;option value="co"&gt;Colombia&lt;/option&gt;
+  &lt;option value="mx"&gt;México&lt;/option&gt;
+  &lt;option value="ar"&gt;Argentina&lt;/option&gt;
+&lt;/select&gt;
+</pre>
+<p><strong>Uso:</strong> Listas de países, categorías, opciones predefinidas.</p>
+</section>
 
-<label>Archivo:</label>
-<input type="file"><br><br>
+<!-- OPTION -->
+<section class="card">
+<h2>&lt;option&gt;</h2>
+<p><strong>Definición:</strong> Define una opción individual dentro de un elemento &lt;select&gt;. 
+Cada opción representa un valor que el usuario puede seleccionar.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre>
+&lt;select name="color"&gt;
+  &lt;option value="rojo"&gt;Rojo&lt;/option&gt;
+  &lt;option value="azul" selected&gt;Azul&lt;/option&gt;
+  &lt;option value="verde"&gt;Verde&lt;/option&gt;
+&lt;/select&gt;
+</pre>
+<p><strong>Uso:</strong> Cada elemento seleccionable dentro de un menú desplegable.</p>
+</section>
 
-<button type="submit">Enviar</button>
+<!-- BUTTON -->
+<section class="card">
+<h2>&lt;button&gt;</h2>
+<p><strong>Definición:</strong> Crea un botón interactivo. Puede enviar formularios, 
+ejecutar JavaScript o realizar otras acciones.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre>
+&lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;button type="button" onclick="alert('Hola')"&gt;Clic aquí&lt;/button&gt;
+&lt;button type="reset"&gt;Limpiar formulario&lt;/button&gt;
+</pre>
+<p><strong>Uso:</strong> Enviar formularios, ejecutar acciones, navegar, interacciones.</p>
+</section>
 
-</fieldset>
-</form>
+<!-- FIELDSET -->
+<section class="card">
+<h2>&lt;fieldset&gt;</h2>
+<p><strong>Definición:</strong> Agrupa elementos relacionados dentro de un formulario. 
+Visualmente crea un recuadro alrededor de los controles agrupados.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre>
+&lt;fieldset&gt;
+  &lt;legend&gt;Información Personal&lt;/legend&gt;
+  &lt;label&gt;Nombre: &lt;input type="text" name="nombre"&gt;&lt;/label&gt;
+  &lt;label&gt;Edad: &lt;input type="number" name="edad"&gt;&lt;/label&gt;
+&lt;/fieldset&gt;
+</pre>
+<p><strong>Uso:</strong> Agrupar campos relacionados, organizar formularios largos.</p>
+</section>
 
-</main>
+<!-- LEGEND -->
+<section class="card">
+<h2>&lt;legend&gt;</h2>
+<p><strong>Definición:</strong> Define un título o leyenda para un &lt;fieldset&gt;. 
+Aparece en el borde superior del recuadro del fieldset.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre>
+&lt;fieldset&gt;
+  &lt;legend&gt;Datos de Contacto&lt;/legend&gt;
+  &lt;input type="email" name="email"&gt;
+  &lt;input type="tel" name="telefono"&gt;
+&lt;/fieldset&gt;
+</pre>
+<p><strong>Uso:</strong> Títulos de secciones dentro de formularios agrupados.</p>
+</section>
+
+<!-- INPUT TYPE: TEXT -->
+<section class="card">
+<h2>&lt;input type="text"&gt;</h2>
+<p><strong>Definición:</strong> Crea un campo de entrada de texto de una sola línea. 
+Es el tipo de input más básico y común.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre>
+&lt;input type="text" name="usuario" placeholder="Usuario"&gt;
+&lt;input type="text" name="nombre" value="Juan" maxlength="50"&gt;
+</pre>
+<p><strong>Uso:</strong> Nombres, apellidos, títulos, cualquier texto corto.</p>
+</section>
+
+<!-- INPUT TYPE: EMAIL -->
+<section class="card">
+<h2>&lt;input type="email"&gt;</h2>
+<p><strong>Definición:</strong> Crea un campo para ingresar direcciones de correo electrónico. 
+Valida automáticamente el formato de email.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre>
+&lt;input type="email" name="correo" required&gt;
+&lt;input type="email" name="email" placeholder="ejemplo@correo.com"&gt;
+</pre>
+<p><strong>Uso:</strong> Formularios de registro, contacto, suscripciones.</p>
+</section>
+
+<!-- INPUT TYPE: PASSWORD -->
+<section class="card">
+<h2>&lt;input type="password"&gt;</h2>
+<p><strong>Definición:</strong> Crea un campo de contraseña donde los caracteres 
+se ocultan automáticamente (se muestran como puntos o asteriscos).</p>
+<p><strong>Sintaxis:</strong></p>
+<pre>
+&lt;input type="password" name="clave" required&gt;
+&lt;input type="password" name="password" minlength="8"&gt;
+</pre>
+<p><strong>Uso:</strong> Formularios de login, registro, cambio de contraseña.</p>
+</section>
+
+<!-- INPUT TYPE: NUMBER -->
+<section class="card">
+<h2>&lt;input type="number"&gt;</h2>
+<p><strong>Definición:</strong> Crea un campo numérico con controles para incrementar 
+o decrementar el valor. Solo acepta números.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre>
+&lt;input type="number" name="edad" min="18" max="100"&gt;
+&lt;input type="number" name="cantidad" value="1" step="1"&gt;
+</pre>
+<p><strong>Uso:</strong> Edad, cantidad, precio, cualquier valor numérico.</p>
+</section>
+
+<!-- INPUT TYPE: DATE -->
+<section class="card">
+<h2>&lt;input type="date"&gt;</h2>
+<p><strong>Definición:</strong> Crea un selector de fecha con un calendario desplegable. 
+El formato de fecha varía según la configuración del navegador.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre>
+&lt;input type="date" name="nacimiento"&gt;
+&lt;input type="date" name="fecha" min="2024-01-01" max="2026-12-31"&gt;
+</pre>
+<p><strong>Uso:</strong> Fecha de nacimiento, reservas, eventos, plazos.</p>
+</section>
+
+<!-- INPUT TYPE: RADIO -->
+<section class="card">
+<h2>&lt;input type="radio"&gt;</h2>
+<p><strong>Definición:</strong> Crea botones de opción donde solo se puede seleccionar 
+una opción de un grupo. Todos deben tener el mismo atributo name.</p>
+<p><strong>Sintaxis:</strong></p>
+<pre>
+&lt;input type="radio" name="genero" value="m" id="masculino"&gt;
+&lt;label for="masculino"&gt;Masculino&lt;/label&gt;
+
+&lt;input type="radio" name="genero" value="f" id="femenino"&gt;
+&lt;label for="femenino"&gt;Femenino&lt;/label&gt;
+</pre>
+<p><strong>Uso:</strong> Selección única entre varias opciones (género, método de pago).</p>
+</section>
+
+<!-- INPUT TYPE: CHECKBOX -->
+<section class="card">
+<h2>&lt;in
 
 <footer>
 <p>© 2026 Blog HTML</p>
